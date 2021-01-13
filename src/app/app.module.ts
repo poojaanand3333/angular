@@ -11,6 +11,7 @@ const appRoutes: Routes = [
   { path: 'page1', component: Page1Component },
   { path: 'home', component:TopicsComponent },
   { path: 'main', component:MainpComponent },
+  { path: '**', redirectTo: 'main', pathMatch: 'full' }
 ]
 @NgModule({
   declarations: [
